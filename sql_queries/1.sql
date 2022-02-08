@@ -27,3 +27,14 @@ where Difficulty_Level = 'Conversant'
 select Course_Name, University, Difficulty_Level 
 from CourseraCourses..Coursera
 where Difficulty_Level = 'Not Calibrated'
+
+
+-- Courses whose rating is greater than 4.5
+select Course_Name, University, Difficulty_Level, Course_Rating
+from CourseraCourses..Coursera
+where Course_Rating > 4.5
+
+-- Courses whose rating is greater than 4.5 and Difficulty Level is Advanced
+select Course_Name, University, Difficulty_Level, Course_Rating
+from CourseraCourses..Coursera
+where Course_Rating > 4.5 and Difficulty_Level = 'Advanced'
