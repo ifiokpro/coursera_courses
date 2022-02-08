@@ -3,3 +3,9 @@
 select Course_Name, University, Difficulty_Level 
 from CourseraCourses..Coursera
 where Difficulty_Level = 'Advanced'
+
+
+-- All the courses in Coursera whose difficulty level is Beginner
+select Course_Name, University, Difficulty_Level 
+from CourseraCourses..Coursera
+where Difficulty_Level = 'Beginner'
