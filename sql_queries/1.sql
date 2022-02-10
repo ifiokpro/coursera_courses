@@ -38,3 +38,8 @@ where Course_Rating > 4.5
 select Course_Name, University, Difficulty_Level, Course_Rating
 from CourseraCourses..Coursera
 where Course_Rating > 4.5 and Difficulty_Level = 'Advanced'
+
+-- Number of courses offered by Coursera Project Network
+select count(*)
+from CourseraCourses..Coursera
+where University like '%Coursera Project Network%'
