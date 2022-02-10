@@ -43,3 +43,10 @@ where Course_Rating > 4.5 and Difficulty_Level = 'Advanced'
 select count(*)
 from CourseraCourses..Coursera
 where University like '%Coursera Project Network%'
+
+
+-- Programming Courses offered by Coursera Project Network
+select count(*)
+--select Course_Name, University, Difficulty_Level, Course_Rating
+from CourseraCourses..Coursera
+where Course_Name like '%Programming%' and University = 'Coursera Project Network'
