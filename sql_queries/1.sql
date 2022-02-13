@@ -55,3 +55,7 @@ where Course_Name like '%Programming%' and University = 'Coursera Project Networ
 -- The Total number of courses taught at University of London and whose course rating is greater than 4.7
 select count(*) from CourseraCourses..Coursera
 where University = 'University of London' and Course_Rating > 4.7
+
+-- Courses whose course rating is NULL
+select Course_Name, [Course _URL], Course_Rating from CourseraCourses..Coursera
+where Course_Rating is null
