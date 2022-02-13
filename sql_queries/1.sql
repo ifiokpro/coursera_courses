@@ -60,6 +60,6 @@ where University = 'University of London' and Course_Rating > 4.7
 select Course_Name, [Course _URL], Course_Rating from CourseraCourses..Coursera
 where Course_Rating is null
 
--- Number of courses that have course rting greater than 4.5
+-- Number of courses that have course rating greater than 4.5
 select COUNT(*) from CourseraCourses..Coursera
 where Course_Rating > 4.5
